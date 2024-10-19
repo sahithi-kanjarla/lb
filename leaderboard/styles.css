@@ -1,0 +1,168 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #008cba;
+    color: white;
+    font-size: 24px;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #005f87; /* Darker blue for the navbar */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Scrolling notice styling */
+.scrolling-notice {
+    background-color: #ffcc00; /* Yellow background for notice */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Container for the leaderboard */
+.leaderboard-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Leaderboard title */
+.leaderboard-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Flexbox for the two info boxes */
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Style of the individual info boxes */
+.info-box {
+    background-color: #008cba;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Search input styling */
+#searchInput {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Leaderboard table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Styling for table cells and borders */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* Table header styling */
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header background and font color */
+th {
+    background-color: #008cba;
+    color: white;
+}
+
+/* Special badge images inside the table */
+.special-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Footer logo styling */
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px;
+    background-color: #008cba;
+    color: white;
+}
+
+footer img {
+    width: 100px;
+}
+
+/* Responsive design for smaller devices */
+@media only screen and (max-width: 768px) {
+    .info-boxes {
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #searchInput {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+}
